@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SkeletonComponent } from './layout/skeleton/skeleton.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { NavigationComponent } from './layout/navigation/navigation.component';
+import { LoginComponent } from './layout/navigation/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SkeletonComponent,
+    FooterComponent,
+    NavigationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
