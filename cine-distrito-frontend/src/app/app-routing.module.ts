@@ -5,7 +5,14 @@ import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 const routes: Routes = [
   {
     path: '',
-    component: SkeletonComponent
+    component: SkeletonComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./modules/cinedistrito.module').then((m) => m.CineDistritoModule)
+      }
+    ]
   }
 ];
 
